@@ -9,3 +9,64 @@
   justify-content: space-around;
   align-items: flex-start;
 }
+
+.digits__item {
+  position: relative;
+  width: 25%;
+  padding-top: 65px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  color: #333;
+  .transition();
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 184px;
+    height: 166px;
+    background-image: url(../img/icons/abris-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &:nth-child(2)::before {
+    width: 161px;
+    height: 169px;
+    left: 45%;
+    background-image: url(../img/icons/abris-2.png);
+  }
+  
+  &:nth-child(3)::before {
+    width: 180px;
+    height: 168px;
+    left: 55%;
+    background-image: url(../img/icons/abris-3.png);
+  }
+  
+  &:nth-child(4)::before {
+    width: 164px;
+    height: 169px;
+    background-image: url(../img/icons/abris-4.png);
+  }
+  
+  &:hover {
+    color: @yellow;
+    .transition();
+  }
+}
+
+.digits__value {
+  display: block;
+  margin-bottom: 80px;
+  font-size: 60px;
+  line-height: 1;
+}
+
+.digits__title {
+  margin: 0;
+  font-size: 30px;
+}
