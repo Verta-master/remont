@@ -1,0 +1,23 @@
+.social {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 20px;
+}
+
+.social__link {
+  font-size: 25px;
+  color: #001f43;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #fff;
+    .transition();
+  }
+}
