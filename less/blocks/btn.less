@@ -7,7 +7,6 @@
   font-size: 16px;
   line-height: 1;
   color: #000;
-  text-transform: uppercase;
   background-color: @yellow;
   border-radius: 20px;
   .transition();
@@ -17,5 +16,17 @@
     color: #fff;
     background-color: @blue;
     .transition();
+  }
+  
+  &--blue {
+    color: #fff;
+    background-color: @blue;
+    
+    &:hover,
+    &:active {
+      color: #000;
+      background-color: @yellow;
+      .transition();
+    }
   }
 }
