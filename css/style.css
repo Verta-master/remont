@@ -736,7 +736,6 @@ h3,
   font-size: 16px;
   line-height: 1;
   color: #000;
-  text-transform: uppercase;
   background-color: #fbc900;
   border-radius: 20px;
   -webkit-transition: ease-out 0.3s;
@@ -746,6 +745,17 @@ h3,
 .btn:active {
   color: #fff;
   background-color: #025a82;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.btn--blue {
+  color: #fff;
+  background-color: #025a82;
+}
+.btn--blue:hover,
+.btn--blue:active {
+  color: #000;
+  background-color: #fbc900;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -792,6 +802,7 @@ h3,
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
+  text-transform: uppercase;
 }
 .swiper-pagination .swiper-pagination-bullet {
   display: inline-block;
@@ -925,6 +936,9 @@ h3,
   margin: 0;
   font-weight: 700;
 }
+.service {
+  padding-bottom: 75px;
+}
 .service__list {
   margin: 0;
   padding: 0;
@@ -1018,4 +1032,72 @@ h3,
 }
 .service__more:hover {
   border-color: rgba(255, 255, 255, 0);
+}
+.about {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(2, 90, 130, 0.5);
+}
+.about__parallax {
+  min-height: 470px;
+}
+.about__wrap {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.about__img {
+  width: 486px;
+  margin-left: 30px;
+}
+.about__info {
+  width: 630px;
+  color: #fff;
+}
+.about__info .title-2 {
+  margin-top: 0;
+  padding-left: 30px;
+  text-align: left;
+  color: #fff;
+}
+.about__btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.digits {
+  padding-top: 20px;
+}
+.digits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
