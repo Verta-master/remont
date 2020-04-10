@@ -107,7 +107,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide promo__slide" style="background-image:url(img/images/banner.jpg);">
             <div class="promo__info">
-              <p class="title">ДИЗАЙН ИНТЕРЬЕРА И СОВРЕМЕННЫЙ РЕМОНТ<br>БЕЗ «головной боли»</p>
+              <p class="title-2">ДИЗАЙН ИНТЕРЬЕРА И СОВРЕМЕННЫЙ РЕМОНТ<br>БЕЗ «головной боли»</p>
               <div class="promo__text">
                 <p>При ремонте премиум класса применяются только лучшие строительные материалы, профессиональные инструменты, а работы выполняют мастера высочайшего класса. Одним из важных составляющих уникального результата являются авторские идеи и решения.</p>
               </div>
@@ -116,7 +116,7 @@
           </div>
           <div class="swiper-slide promo__slide" style="background-image:url(img/images/bg-1.jpg);">
             <div class="promo__info">
-              <p class="title">ДИЗАЙН ИНТЕРЬЕРА И СОВРЕМЕННЫЙ РЕМОНТ<br>БЕЗ «головной боли»</p>
+              <p class="title-2">ДИЗАЙН ИНТЕРЬЕРА И СОВРЕМЕННЫЙ РЕМОНТ<br>БЕЗ «головной боли»</p>
               <div class="promo__text">
                 <p>При ремонте премиум класса применяются только лучшие строительные материалы, профессиональные инструменты, а работы выполняют мастера высочайшего класса.</p>
               </div>
@@ -125,7 +125,7 @@
           </div>
           <div class="swiper-slide promo__slide" style="background-image:url(img/images/bg-2.jpg);">
             <div class="promo__info">
-              <p class="title">ДИЗАЙН ИНТЕРЬЕРА И СОВРЕМЕННЫЙ РЕМОНТ<br>БЕЗ «головной боли»</p>
+              <p class="title-2">ДИЗАЙН ИНТЕРЬЕРА И СОВРЕМЕННЫЙ РЕМОНТ<br>БЕЗ «головной боли»</p>
               <div class="promo__text">
                 <p>При ремонте премиум класса применяются только лучшие строительные материалы, профессиональные инструменты, а работы выполняют мастера высочайшего класса. Одним из важных составляющих уникального результата являются авторские идеи и решения.</p>
               </div>
@@ -135,8 +135,8 @@
         </div>
         <div class="swiper-pagination promo__pagination"></div>
       </div>
-      <div class="swiper-button-prev promo__prev"><i class="fa fas-chevron-left"></i></div>
-      <div class="swiper-button-next promo__next"><i class="fa fas-chevron-right"></i></div>
+      <div class="swiper-button-prev promo__prev"><i class="fas fa-chevron-left"></i></div>
+      <div class="swiper-button-next promo__next"><i class="fas fa-chevron-right"></i></div>
     </section>
     
     <section class="benefits">
@@ -802,6 +802,11 @@
       simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,
+      loop: 'true',
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
     });
     
     var mySwiper = new Swiper ('.review__slider', {
