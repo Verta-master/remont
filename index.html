@@ -814,7 +814,7 @@
           <a href="tel:+79605180424" class="footer__phone">+7 (960) 518-04-24</a>
           <a href="tel:+79108614220" class="footer__phone">+7 (910) 861-42-20</a>
           <a href="mailto:info@vau-remont.ru" class="footer__mail">info@vau-remont.ru</a>
-          <a href="#" class="btn-square footer__btn">Заказать звонок</a>
+          <a data-fancybox="" data-src="#call" href="javascript:;" class="btn-square footer__btn">Заказать звонок</a>
           <ul class="social">
             <li class="social__item">
               <a href="#" class="social__link" title="Skype"><i class="fab fa-skype"></i></a>
@@ -841,21 +841,23 @@
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
     <div class="modal__wrap">
-      <p class="modal__title"></p>
-      <i class="fa fas-pencil-alt"></i>
+      <p class="modal__title">Обратная связь</p>
+      <i class="fas fa-flip-horizontal fa-pencil-alt"></i>
     </div>
-    <form action="#" class="form">
-      <label for="name" class="form__label">Имя</label>
-      <input type="text" id="name" class="form__input">
-      <label for="phone" class="form__label">Телефон</label>
-      <input type="tel" id="phone" class="form__input">
-      <label for="message" class="form__label">Сообщение</label>
-      <textarea id="message" class="form__message"></textarea>
-      <div class="form__wrap">
-        <a href="#" class="form__back">Назад</a>
-        <button type="submit" class="btn-square form__btn">Отправить</button>
-      </div>
-    </form>
+    <div class="modal__form">
+      <form action="#" class="form">
+        <label for="name" class="form__label">Имя</label>
+        <input type="text" id="name" class="form__input">
+        <label for="phone" class="form__label">Телефон</label>
+        <input type="tel" id="phone" class="form__input">
+        <label for="message" class="form__label">Сообщение</label>
+        <textarea id="message" class="form__message"></textarea>
+        <div class="form__wrap">
+          <a href="#" class="btn-square form__back">Назад</a>
+          <button type="submit" class="btn-square form__btn">Отправить</button>
+        </div>
+      </form>
+    </div>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
