@@ -45,3 +45,25 @@
     border-color: rgba(255,255,255,0);
   }
 }
+
+.btn-square {
+  width: 255px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1;
+  color: #272727;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background-color: @yellow;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: @blue;
+    .transition();
+  }
+}
