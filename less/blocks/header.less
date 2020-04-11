@@ -1,3 +1,40 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  
+  &--scroll {
+    .logo {
+      width: 220px;
+      height: 110px;
+      padding: 30px;
+      box-shadow: none;
+      .transition();
+    }
+    .header__wrap {
+      position: static;
+      padding-left: 240px;
+      .transition();
+    }
+    .header__call {
+      margin-left: 50px;
+      .transition();
+    }
+    .menu__link,
+    .menu__down {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      .transition();
+    }
+  }
+}
+
+.header__bottom {
+  background-color: #fff;
+}
+
 .header__top {
   padding-top: 14px;
   padding-bottom: 8px;
@@ -9,6 +46,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  .transition();
 }
 
 .header__call {
