@@ -66,4 +66,16 @@
     background-color: @blue;
     .transition();
   }
+  
+  &--blue {
+    color: #fff;
+    background-color: @blue;
+    
+    &:hover,
+    &:active {
+      color: #000;
+      background-color: @yellow;
+      .transition();
+    }
+  }
 }
