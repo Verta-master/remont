@@ -1,0 +1,54 @@
+.page {
+  color: #333;
+  
+  ul {
+    .reset();
+    list-style: none;
+    padding-left: 70px;
+    
+    li {
+      position: relative;
+      padding-left: 25px;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: rgb(251, 201, 0);
+      }
+    }
+  }
+}
+
+blockquote {
+  .reset();
+  position: relative;
+  margin-left: 57px;
+  margin-top: 50px;
+  padding: 15px;
+  background-color: @yellow;
+  border-left: 13px solid @blue;
+  
+  p {
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+    left: -45px;
+    width: 123px;
+    height: 117px;
+    background-image: url(../img/icons/star.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
