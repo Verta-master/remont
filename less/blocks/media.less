@@ -165,6 +165,18 @@
   .footer__mail {
     font-size: 18px;
   }
+  .price__title {
+    font-size: 20px;
+  }
+  .price__body ul {
+    padding-left: 0;
+  }
+  .price__value span {
+    font-size: 80px;
+  }
+  .process__text {
+    line-height: 1;
+  }
 }
 
 //////////////////////////////////////////////
@@ -287,6 +299,36 @@
   main {
     padding-top: 123px;
   }
+  .price__body {
+    padding-left: 20px;
+  }
+  .price__value {
+    font-size: 36px;
+  }
+  .price__value span {
+    font-size: 60px;
+  }
+  .process__item::after,
+  .process__list::before {
+    display: none;
+  }
+  .process__list {
+    display: block;
+  }
+  .process__item {
+    width: 370px;
+    max-width: 100%;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .process__text {
+    width: ~"calc(100% - 100px)";
+    
+    span {
+      max-width: 100%;
+    }
+  }
 }
 
 //////////////////////////////////////////////
@@ -336,6 +378,7 @@
     padding-left: 0;
     text-align: center;
   }
+  .price__list,
   .digits__list {
     flex-direction: column;
     align-items: center;
@@ -355,6 +398,19 @@
   }
   .footer__block {
     width: 50%;
+  }
+  .top {
+    padding-top: 100px;
+  }
+  .price__item {
+    margin-bottom: 20px;
+  }
+  .table__scroll {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .table table {
+    width: 750px;
   }
 }
 
@@ -416,6 +472,7 @@
   .tabs__title .ui-tabs-active a {
     text-decoration: underline;
   }
+  .consulting__form .form__input,
   .footer__contacts,
   .footer__block,
   .order__input,
@@ -459,5 +516,42 @@
     p {
       max-width: 100%;
     }
+  }
+  blockquote {
+    margin-left: 30px;
+  }
+  .page ul {
+    padding-left: 0;
+    
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  .share {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .share__list {
+    flex-wrap: wrap;
+  }
+  .share span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .share__item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .form__wrap {
+    display: block;
+  }
+  .consulting__form .checkbox__label {
+    margin-right: 0;
+  }
+  .table table {
+    margin-top: 0;
+  }
+  .price__value span {
+    font-size: 80px;
   }
 }
