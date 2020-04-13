@@ -527,6 +527,9 @@ button {
 }
 .logo img {
   display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 h1,
 .title {
@@ -573,6 +576,7 @@ h3,
   z-index: 1000;
 }
 .header--scroll .logo {
+  left: calc(50% - 615px);
   width: 220px;
   height: 110px;
   padding: 30px;
@@ -2228,7 +2232,7 @@ h3,
 .top {
   position: relative;
   min-height: 525px;
-  padding-top: 160px;
+  padding-top: 175px;
   text-align: center;
   color: #fff;
   font-size: 20px;
@@ -2249,8 +2253,9 @@ h3,
 }
 .top .title {
   margin-top: 0;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   color: #fff;
+  line-height: 1.2;
 }
 .top .wrapper {
   position: relative;
@@ -2297,6 +2302,7 @@ span.breadcrumbs__link {
   list-style: none;
   padding-left: 70px;
   margin-bottom: 40px;
+  margin-top: 35px;
 }
 .page ul li {
   position: relative;
@@ -2317,8 +2323,9 @@ blockquote {
   padding: 0;
   position: relative;
   margin-left: 57px;
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 15px;
+  padding-bottom: 25px;
   background-color: #fbc900;
   border-left: 13px solid #025a82;
 }
@@ -2340,7 +2347,7 @@ blockquote::before {
   background-size: contain;
 }
 .page__banner {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 .page__banner img {
   display: block;
@@ -2376,9 +2383,10 @@ blockquote::before {
           align-items: center;
   padding-left: 0 !important;
   margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }
 .share__item {
-  margin-left: 20px;
+  margin-left: 17px;
   padding-left: 0 !important;
   color: #025a82;
   border: 1px solid #025a82;
@@ -2428,8 +2436,8 @@ blockquote::before {
   font-size: 25px;
 }
 .consulting {
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 45px;
+  padding-bottom: 30px;
 }
 .consulting .title-2 {
   text-transform: uppercase;
@@ -2444,9 +2452,15 @@ blockquote::before {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 22px;
 }
 .consulting__form .form__input {
-  width: 32%;
+  width: 31%;
+  height: 55px;
+}
+.consulting__form .form__message {
+  height: 110px;
+  margin-bottom: 30px;
 }
 .consulting__form .form__input::-webkit-input-placeholder, .consulting__form .form__message::-webkit-input-placeholder {
   letter-spacing: 0.075em;
@@ -2477,6 +2491,7 @@ blockquote::before {
   height: 67px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.075em;
@@ -2484,6 +2499,7 @@ blockquote::before {
 }
 .price {
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 .price__list {
   margin: 0;
@@ -2532,7 +2548,7 @@ blockquote::before {
 }
 .price__title {
   width: 100%;
-  height: 98px;
+  height: 95px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2548,6 +2564,7 @@ blockquote::before {
           align-items: center;
   color: #fff;
   font-size: 25px;
+  line-height: 1;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -2560,6 +2577,7 @@ blockquote::before {
 .price__body {
   padding: 35px;
   padding-top: 45px;
+  padding-right: 10px;
   color: #3d3b3b;
 }
 .price__body ul {
@@ -2571,11 +2589,11 @@ blockquote::before {
   opacity: 0.75;
 }
 .price__body ul li {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 .price__value {
   text-align: center;
-  font-size: 38px;
+  font-size: 42px;
   line-height: 1;
   opacity: 0.75;
 }
@@ -2593,7 +2611,8 @@ blockquote::before {
   font-size: 20px;
 }
 .table {
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .table .wrapper {
   padding-left: 0;
@@ -2602,11 +2621,12 @@ blockquote::before {
 .table table {
   width: 100%;
   margin-bottom: 30px;
+  margin-top: 60px;
   color: #333333;
   border-collapse: collapse;
 }
 .table table th {
-  height: 90px;
+  height: 95px;
   font-size: 20px;
   background-color: #fbc900;
 }
@@ -2650,6 +2670,7 @@ blockquote::before {
   text-decoration: underline;
 }
 .process {
+  padding-top: 20px;
   padding-bottom: 90px;
 }
 .process__list {
@@ -2666,6 +2687,7 @@ blockquote::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 55px;
 }
 .process__list::before {
   content: "";
@@ -2716,6 +2738,7 @@ blockquote::before {
   top: 95px;
 }
 .process__text {
+  width: 129px;
   height: 88px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2728,6 +2751,9 @@ blockquote::before {
           align-items: center;
   color: #025a82;
   text-align: center;
+}
+.process__text span {
+  max-width: 100%;
 }
 .process__icon {
   width: 88px;
@@ -2928,6 +2954,18 @@ blockquote::before {
   .footer__mail {
     font-size: 18px;
   }
+  .price__title {
+    font-size: 20px;
+  }
+  .price__body ul {
+    padding-left: 0;
+  }
+  .price__value span {
+    font-size: 80px;
+  }
+  .process__text {
+    line-height: 1;
+  }
 }
 @media (max-width: 1022px) {
   .header__wrap {
@@ -3062,6 +3100,38 @@ blockquote::before {
   main {
     padding-top: 123px;
   }
+  .price__body {
+    padding-left: 20px;
+  }
+  .price__value {
+    font-size: 36px;
+  }
+  .price__value span {
+    font-size: 60px;
+  }
+  .process__item::after,
+  .process__list::before {
+    display: none;
+  }
+  .process__list {
+    display: block;
+  }
+  .process__item {
+    width: 370px;
+    max-width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .process__text {
+    width: calc(100% - 100px);
+  }
+  .process__text span {
+    max-width: 100%;
+  }
 }
 @media (max-width: 766px) {
   .header__phones,
@@ -3115,6 +3185,7 @@ blockquote::before {
     padding-left: 0;
     text-align: center;
   }
+  .price__list,
   .digits__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3139,6 +3210,19 @@ blockquote::before {
   }
   .footer__block {
     width: 50%;
+  }
+  .top {
+    padding-top: 100px;
+  }
+  .price__item {
+    margin-bottom: 20px;
+  }
+  .table__scroll {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .table table {
+    width: 750px;
   }
 }
 @media (max-width: 480px) {
@@ -3200,6 +3284,7 @@ blockquote::before {
   .tabs__title .ui-tabs-active a {
     text-decoration: underline;
   }
+  .consulting__form .form__input,
   .footer__contacts,
   .footer__block,
   .order__input,
@@ -3242,5 +3327,45 @@ blockquote::before {
   }
   .work__overlay p {
     max-width: 100%;
+  }
+  blockquote {
+    margin-left: 30px;
+  }
+  .page ul {
+    padding-left: 0;
+  }
+  .page ul li {
+    margin-bottom: 10px;
+  }
+  .share {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .share__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .share span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .share__item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .form__wrap {
+    display: block;
+  }
+  .consulting__form .checkbox__label {
+    margin-right: 0;
+  }
+  .table table {
+    margin-top: 0;
+  }
+  .price__value span {
+    font-size: 80px;
   }
 }
