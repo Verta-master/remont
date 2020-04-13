@@ -3141,9 +3141,6 @@ blockquote::before {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main {
-    padding-top: 168px;
-  }
   .steps__wrap::before,
   .benefits__wrap::before {
     display: none;
@@ -3224,6 +3221,12 @@ blockquote::before {
   .table table {
     width: 750px;
   }
+  .header {
+    position: relative;
+  }
+  main {
+    padding-top: 0;
+  }
 }
 @media (max-width: 480px) {
   .header__wrap {
@@ -3239,12 +3242,6 @@ blockquote::before {
   }
   .logo img {
     max-height: 100%;
-  }
-  .header {
-    position: relative;
-  }
-  main {
-    padding-top: 0;
   }
   .title-3,
   h3 {
