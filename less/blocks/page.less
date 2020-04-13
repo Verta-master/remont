@@ -1,27 +1,27 @@
 .page {
   color: #333;
-  
-  ul {
-    .reset();
-    list-style: none;
-    padding-left: 70px;
-    margin-bottom: 40px;
-    margin-top: 35px;
-    
-    li {
-      position: relative;
-      padding-left: 25px;
-      
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background-color: rgb(251, 201, 0);
-      }
+}
+
+.page ul {
+  .reset();
+  list-style: none;
+  padding-left: 70px;
+  margin-bottom: 40px;
+  margin-top: 35px;
+
+  li {
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: rgb(251, 201, 0);
     }
   }
 }

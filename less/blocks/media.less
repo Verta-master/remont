@@ -4,6 +4,7 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .header--card .logo,
   .logo {
     left: 15px;
     width: 220px;
@@ -12,6 +13,7 @@
     box-shadow: none;
     .transition();
   }
+  .header--card .header__wrap,
   .header__wrap {
     position: static;
     padding-left: 240px;
@@ -30,6 +32,7 @@
     padding-bottom: 18px;
     .transition();
   }
+  .main--card,
   main {
     padding-top: 110px;
   }
@@ -136,6 +139,11 @@
   .news__item:nth-child(4) {
     display: none;
   }
+  .card__slider .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .info .wrapper,
   .video .wrapper {
     padding-left: 15px;
     padding-right: 15px;
@@ -168,6 +176,9 @@
   .price__title {
     font-size: 20px;
   }
+  .card__wrap,
+  .card__wrap ul,
+  .card .title-2,
   .price__body ul {
     padding-left: 0;
   }
@@ -177,10 +188,21 @@
   .process__text {
     line-height: 1;
   }
+  .card__preview {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .card__wrap ul {
+    width: 50%;
+  }
+  .card__info {
+    left: 0;
+  }
 }
 
 //////////////////////////////////////////////
 @media (max-width: 1022px) {
+  .header--card .header__wrap,
   .header__wrap {
     flex-wrap: wrap;
   }
@@ -198,6 +220,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .header--card .logo,
   .logo {
     height: 123px !important;
   }
@@ -296,6 +319,7 @@
   .footer__title {
     padding-right: 30px;
   }
+  .main--card,
   main {
     padding-top: 123px;
   }
@@ -329,17 +353,18 @@
       max-width: 100%;
     }
   }
+  .card__link {
+    height: 450px;
+  }
 }
 
 //////////////////////////////////////////////
 @media (max-width: 766px) {
   .header__phones,
-  .header__wrap {
+  .header__wrap,
+  .header--card .header__wrap {
     flex-direction: column;
   }
-//  main {
-//    padding-top: 168px;
-//  }
   .steps__wrap::before,
   .benefits__wrap::before {
     display: none;
@@ -350,6 +375,7 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .card__wrap ul,
   .about__info,
   .benefits__item {
     width: 100%;
@@ -415,17 +441,29 @@
   .header {
     position: relative;
   }
+  .main--card,
   main {
     padding-top: 0;
+  }
+  .card__link {
+    height: 280px;
+  }
+  .card__wrap {
+    display: block;
+  }
+  .card__wrap ul {
+    margin: 0;
   }
 }
 
 //////////////////////////////////////////////
 @media (max-width: 480px) {
+  .header--card .header__wrap,
   .header__wrap {
     padding-left: 15px;
     padding-top: 110px;
   }
+  .header--card .logo,
   .logo {
     height: 110px !important;
     padding: 10px;
@@ -553,5 +591,29 @@
   }
   .price__value span {
     font-size: 80px;
+  }
+  .card__link {
+    height: 170px;
+  }
+  .card__info {
+    top: 10px;
+    padding: 10px;
+  }
+  .card__list {
+    padding: 0;
+    display: block;
+    min-width: 100px;
+  }
+  .card__item {
+    margin-right: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .card__item img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .gallery-thumbs {
+    width: 200px;
   }
 }
