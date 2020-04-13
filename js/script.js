@@ -16,7 +16,7 @@ $('.footer__down').click(function() {
   $(this).next().slideToggle();
 })
 
-//Scroll to top
+//Header scroll
 if (window.innerWidth > 1230) {
   $(window).scroll(function(){
     if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 100) {
