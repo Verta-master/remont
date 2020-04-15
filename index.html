@@ -318,7 +318,7 @@
     </section>
     
     <section class="about">
-      <div class="about__parallax" data-parallax="scroll" data-image-src="img/images/bg-1.jpg">
+      <div class="about__parallax paroller" style="background-image:url(img/images/bg-1.jpg);" data-paroller-factor="0.3" data-paroller-type="background" data-paroller-direction="vertical">
         <div class="wrapper about__wrap">
           <figure class="about__img">
             <img src="img/images/hexagons.png" alt="Немного о нас">
@@ -574,7 +574,7 @@
     </section>
     
     <section class="order">
-      <div class="order__parallax" data-parallax="scroll" data-image-src="img/images/bg-2.jpg">
+      <div class="order__parallax paroller" style="background-image:url(img/images/bg-2.jpg);" style="background-image:url(img/images/bg-1.jpg);" data-paroller-factor="0.3" data-paroller-type="background" data-paroller-direction="vertical">
         <div class="wrapper order__wrap">
           <div class="order__slogan">
             <b>Ремонт? Легко!</b>
@@ -865,7 +865,7 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.paroller.min.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -904,6 +904,11 @@
     $(function() {
       $("#tabs").tabs();
     });
+  </script>
+  
+  <!-- Parallax -->
+  <script>
+    $('.paroller').paroller();
   </script>
 </body>
 </html>

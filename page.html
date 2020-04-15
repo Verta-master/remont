@@ -494,7 +494,7 @@
     </section>
     
     <section class="order">
-      <div class="order__parallax" data-parallax="scroll" data-image-src="img/images/bg-2.jpg">
+      <div class="order__parallax paroller" style="background-image:url(img/images/bg-2.jpg);" style="background-image:url(img/images/bg-1.jpg);" data-paroller-factor="0.3" data-paroller-type="background" data-paroller-direction="vertical">
         <div class="wrapper order__wrap">
           <div class="order__slogan">
             <b>Ремонт? Легко!</b>
@@ -617,6 +617,11 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
-  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.paroller.min.js"></script>
+  
+  <!-- Parallax -->
+  <script>
+    $('.paroller').paroller();
+  </script>
 </body>
 </html>
